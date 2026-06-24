@@ -1,0 +1,136 @@
+.section {
+  padding: 90px 60px;
+  border-bottom: 1px solid var(--border);
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  margin-bottom: 48px;
+  line-height: 1.1;
+}
+
+.title em {
+  color: var(--accent);
+  font-style: normal;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  transition: border-color 0.25s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.iconBox {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(200, 255, 0, 0.1);
+  border: 1px solid rgba(200, 255, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.courseTitle {
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.institution {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.dot {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.period {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.topic {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.topicDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 20px;
+  }
+}

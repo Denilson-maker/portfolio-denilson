@@ -3,6 +3,43 @@ import styles from './Experience.module.css';
 
 const experiences = [
   {
+    period: '2026',
+    type: 'Desenvolvimento',
+    role: 'Desenvolvedor Full Stack',
+    company: 'Sistema de Faturação Web',
+    bullets: [
+      'Desenvolvi sistema de gestão de clientes, produtos e faturas.',
+      'Implementei autenticação segura com JWT e bcrypt.',
+      'Desenvolvi APIs REST para operações CRUD.',
+      'Modelei e administrei a base de dados MySQL.',
+    ],
+  },
+  {
+    period: '2026',
+    type: 'Redes',
+    role: 'Técnico de Redes',
+    company: 'Laboratórios e Projetos CCNA',
+    bullets: [
+      'Configuração de VLANs, Routing e Switching.',
+      'Implementação de NAT, DHCP e DNS.',
+      'Aplicação de ACLs e segurança de redes.',
+      'Diagnóstico de problemas de conectividade com Cisco Packet Tracer.',
+    ],
+  },
+  {
+    period: '2025',
+    type: 'Desenvolvimento',
+    role: 'Desenvolvedor Full Stack (Projeto Académico)',
+    company: 'Sistema Integrado de Gestão Académica',
+    bullets: [
+      'Analisei requisitos funcionais e não funcionais.',
+      'Modelei a base de dados relacional.',
+      'Desenvolvi frontend e backend da aplicação.',
+      'Implementei autenticação e controlo de acessos.',
+      'Criei APIs REST para integração dos módulos.',
+    ],
+  },
+  {
     period: '2024 — 2025',
     type: 'Ensino',
     role: 'Docente de Programação, Matemática & Física',
@@ -10,9 +47,19 @@ const experiences = [
     bullets: [
       'Lecionei Técnicas de Linguagem de Programação, introduzindo lógica computacional e algoritmos.',
       'Conduzi aulas de Matemática com foco em raciocínio lógico e resolução de problemas.',
-      'Estruturei conteúdos de Física relacionando teoria com aplicações práticas e experimentais.',
+      'Estruturei conteúdos de Física relacionando teoria com aplicações práticas.',
       'Desenvolvi planos de aulas, avaliações e materiais pedagógicos institucionais.',
-      'Monitorizei o desempenho académico e forneci suporte individualizado quando necessário.',
+    ],
+  },
+  {
+    period: '2024',
+    type: 'Bases de Dados',
+    role: 'Administrador de Bases de Dados',
+    company: 'Projetos Académicos',
+    bullets: [
+      'Modelação de bases de dados e criação de esquemas relacionais.',
+      'Desenvolvimento de consultas SQL e stored procedures.',
+      'Gestão, manutenção e otimização de bases de dados MySQL.',
     ],
   },
 ];

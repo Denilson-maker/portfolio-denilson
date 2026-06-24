@@ -73,3 +73,19 @@
     padding: 60px 20px;
   }
 }
+
+.groupBlock {
+  margin-bottom: 32px;
+}
+
+.groupLabel {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 14px;
+  padding-left: 4px;
+  border-left: 3px solid var(--accent);
+  padding-left: 10px;
+}

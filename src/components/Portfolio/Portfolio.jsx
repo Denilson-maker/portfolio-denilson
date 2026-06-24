@@ -4,22 +4,36 @@ import styles from './Portfolio.module.css';
 
 const projects = [
   {
-    emoji: '🖥️',
-    tags: ['React', 'Node.js', 'MySQL'],
-    title: 'Sistema de Gestão Web',
-    desc: 'Aplicação full stack com autenticação JWT, dashboard administrativo e API REST escalável.',
+    emoji: '🎓',
+    tags: ['React', 'Node.js', 'MySQL', 'JWT'],
+    title: 'Sistema Integrado de Gestão Académica',
+    desc: 'Sistema completo para gestão académica com autenticação, controlo de acessos e APIs REST para integração de módulos. Desenvolvido como projeto de licenciatura.',
+    github: '#',
+    demo: '#',
   },
   {
-    emoji: '🔐',
-    tags: ['Node.js', 'Express', 'JWT'],
-    title: 'API REST com Autenticação',
-    desc: 'Backend robusto com endpoints protegidos, bcrypt para passwords e gestão de utilizadores.',
+    emoji: '🧾',
+    tags: ['React', 'Node.js', 'MySQL', 'JWT', 'bcrypt'],
+    title: 'Sistema de Faturação Web',
+    desc: 'Plataforma de gestão de clientes, produtos e faturas com autenticação segura, APIs REST para operações CRUD e base de dados MySQL.',
+    github: '#',
+    demo: '#',
   },
   {
-    emoji: '🗄️',
-    tags: ['MySQL', 'SQL', 'Workbench'],
-    title: 'Modelação de Base de Dados',
-    desc: 'Esquema normalizado com stored procedures, funções e queries otimizadas para performance.',
+    emoji: '✅',
+    tags: ['React', 'Node.js', 'Express.js'],
+    title: 'TaskHelpers',
+    desc: 'Aplicação web para gestão de tarefas e produtividade com operações CRUD, gestão de estados e interface responsiva. Publicado em produção.',
+    github: '#',
+    demo: '#',
+  },
+  {
+    emoji: '🌐',
+    tags: ['React', 'CSS3', 'Vercel'],
+    title: 'Portfólio Profissional',
+    desc: 'Website responsivo para apresentação profissional com interface moderna, adaptável a dispositivos móveis e publicado no Vercel.',
+    github: '#',
+    demo: '#',
   },
 ];
 
@@ -46,10 +60,10 @@ function Portfolio() {
                 <h3 className={styles.cardTitle}>{project.title}</h3>
                 <p className={styles.cardDesc}>{project.desc}</p>
                 <div className={styles.cardLinks}>
-                  <a href="#!" className={styles.cardLink}>
+                  <a href={project.github} className={styles.cardLink}>
                     <FiGithub /> Código
                   </a>
-                  <a href="#!" className={styles.cardLink}>
+                  <a href={project.demo} className={styles.cardLink}>
                     <FiExternalLink /> Demo
                   </a>
                 </div>
