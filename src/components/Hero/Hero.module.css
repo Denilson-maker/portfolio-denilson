@@ -222,9 +222,14 @@
   }
 
   .right {
-    display: flex; /* ← agora aparece */
+    display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    order: -1; /* ← foto aparece primeiro */
+  }
+
+  .left {
+    order: 2;
   }
 
   .photoFrame {
@@ -236,5 +241,4 @@
     gap: 24px;
   }
 
-  
 }

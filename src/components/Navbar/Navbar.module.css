@@ -107,4 +107,8 @@
   .links.open {
     display: flex;
   }
+
+  .cta {
+    display: none; /* ← esconde o botão contratar em mobile */
+  }
 }
