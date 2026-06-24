@@ -2,7 +2,7 @@ import React from 'react';
 import {
   FiCode, FiLayout, FiServer, FiDatabase,
   FiLock, FiTerminal, FiWifi, FiGitBranch,
-  FiTool, FiCpu, FiBookOpen, FiGlobe
+  FiTool, FiCpu, FiBookOpen
 } from 'react-icons/fi';
 import { SiMysql, SiExpress, SiPostman, SiVercel, SiCisco } from 'react-icons/si';
 import styles from './Skills.module.css';
